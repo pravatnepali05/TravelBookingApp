@@ -11,19 +11,22 @@ FUNKTIONEN:
 -Admin-Dashboard – Verwaltung von Touren, Kategorien und Buchungen
 
 PROJEKTSTRUKTUR (Client und Server) 
-ravelEase/
-│── client/        # React-Frontend
-│   ├── src/       # Komponenten, Seiten, Routen
-│   ├── public/    # Statische Dateien
-│── server/        # Express-Backend
-│   ├── src/
-│   │   ├── models/       # Mongoose-Schemas
-│   │   ├── controllers/  # API-Logik
-│   │   ├── routes/       # REST-Endpunkte
-│   │   ├── middlewares/  # Authentifizierung, Fehlerbehandlung
-│   └── index.js   # Einstiegspunkt für den Server
-│── README.md
-│── package.json   # Root-Abhängigkeiten (falls Monorepo)
+TravelEase/
+
+client/ – React-Frontend
+src/ – Komponenten, Seiten und Routen
+public/ – Statische Dateien
+---------------------------------------------------------------------------------
+server/ – Express-Backend
+src/
+models/ – Mongoose-Schemas (z. B. User, Tour, Buchung)
+controllers/ – API-Logik (z. B. TourController, AuthController)
+routes/ – REST-Endpunkte (z. B. /api/tours, /api/auth)
+middlewares/ – Middleware-Funktionen (Authentifizierung, Fehlerbehandlung)
+----------------------------------------------------------------------------------
+index.js – Einstiegspunkt für den Server
+README.md – Projektdokumentation
+package.json – Projektabhängigkeiten
 
 INSTALLATION & EINRICHTUNG
 
