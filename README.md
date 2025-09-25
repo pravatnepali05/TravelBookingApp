@@ -38,8 +38,8 @@ Dieses Projekt besteht aus **zwei Ordnern**:
 
 1. Repository klonen:
    ```bash
-   git clone https: //github.com/your-username/travelbooking.git
-   cd travelbooking](https://github.com/pravatnepali05/TravelBookingApp/tree/my-new-branch
+   git clone https: [//github.com/your-username/travelbooking.git
+   cd travelbooking](https://github.com/pravatnepali05/TravelBookingApp/tree/my-new-branch](https://github.com/pravatnepali05/TravelBookingApp/tree/my-new-branch)
 Abhängigkeiten für Client und Server installieren:
 
 bash
