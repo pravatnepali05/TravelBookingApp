@@ -1,48 +1,86 @@
-# TravelBookingApp
+TravelEase
+TravelEase ist eine Full-Stack MERN (MongoDB, Express, React, Node.js) Webanwendung für Tourbuchung und Reiseplanung. Nutzer können verfügbare Touren durchsuchen, Details einsehen, Reisen buchen und ihre Reservierungen verwalten. Administratoren haben die Möglichkeit, Touren und Kategorien über ein geschütztes Dashboard zu erstellen und zu verwalten.
 
-TravelBooking – Eine MERN-Stack Webanwendung zum Stöbern, Buchen und Verwalten von Reisen.  
-Funktionen beinhalten Benutzer-Authentifizierung, Admin-Dashboard, Tour-Verwaltung und Zahlungsoptionen.  
+FUNKTIONEN:
 
-## Funktionen
+-Authentifizierung & Autorisierung (JWT-basiertes Login/Registrierung mit Admin- und Benutzerrollen)
+-Tour-Kategorien und Beiträge – Durchsuchen und Anzeigen von Touren mit Details und Bildern
+-Buchungssystem – Touren zum Warenkorb hinzufügen und buchen
+-Bild-Uploads über Cloudinary (konfigurierbar in .env)
+-Responsives UI mit React + Tailwind
+-Admin-Dashboard – Verwaltung von Touren, Kategorien und Buchungen
 
-- Benutzer-Authentifizierung (JWT-basiert: Login & Registrierung)  
-- Stöbern durch Touren mit Details, Bildern und Preisen  
-- Touren buchen mit einfachem Checkout-Prozess  
-- Benutzer-Dashboard zur Verwaltung der eigenen Buchungen  
-- Admin-Dashboard zur Verwaltung von Touren  
-- Bild-Uploads über Cloudinary  
-- Zahlungsoptionen (Platzhalter oder Anbindung möglich)  
+PROJEKTSTRUKTUR (Client und Server) 
+ravelEase/
+│── client/        # React-Frontend
+│   ├── src/       # Komponenten, Seiten, Routen
+│   ├── public/    # Statische Dateien
+│── server/        # Express-Backend
+│   ├── src/
+│   │   ├── models/       # Mongoose-Schemas
+│   │   ├── controllers/  # API-Logik
+│   │   ├── routes/       # REST-Endpunkte
+│   │   ├── middlewares/  # Authentifizierung, Fehlerbehandlung
+│   └── index.js   # Einstiegspunkt für den Server
+│── README.md
+│── package.json   # Root-Abhängigkeiten (falls Monorepo)
 
----
+INSTALLATION & EINRICHTUNG
 
-## Tech Stack
+*Repository klonen
+-git clone https://github.com/dein-benutzername/travelease.git
+-cd travelease
 
-Frontend: React, Vite, TailwindCSS, React Router  
-Backend: Node.js, Express.js, MongoDB, Mongoose  
-Weitere Tools: Cloudinary, JWT Auth, Postman API Tests  
 
----
+*Abhängigkeiten installieren
+Für den Server:
+-cd server
+npm install
 
-## Erste Schritte
 
-### Voraussetzungen
-- Node.js (>= v18)  
-- MongoDB (lokal oder Atlas)  
-- Cloudinary-Account (für Bilder-Hosting)  
+Für den Client:
+-cd ../client
+-npm install
 
-### Installation
+*Projekt starten
+Backend starten:
 
-Dieses Projekt besteht aus **zwei Ordnern**:  
-- `client` → Frontend  
-- `server` → Backend  
+-cd server
+-npm run dev
 
-1. Repository klonen:
-   ```bash
-   git clone https: [//github.com/your-username/travelbooking.git
-   cd travelbooking](https://github.com/pravatnepali05/TravelBookingApp/tree/my-new-branch](https://github.com/pravatnepali05/TravelBookingApp/tree/my-new-branch)
-Abhängigkeiten für Client und Server installieren:
 
-bash
-Copy code
-cd client && npm install
-cd ../server && npm install
+Frontend starten:
+
+cd client
+npm run dev
+
+
+Standardmäßig:
+
+React-App läuft unter http://localhost:5173
+
+API-Server läuft unter http://localhost:3000
+
+Nutzung
+
+Benutzer:
+-
+Registrieren oder anmelden
+-Touren durchsuchen und Details ansehen
+-Touren buchen und Warenkorb verwalten
+
+Administrator:
+-Anmeldung mit Admin-Zugangsdaten
+-Zugriff auf das Admin-Dashboard
+-Touren und Kategorien erstellen, bearbeiten und löschen
+-Buchungen anzeigen und verwalten
+
+Technologiestack
+-Frontend: React, Vite, Tailwind CSS, React Router
+-Backend: Node.js, Express.js
+-Datenbank: MongoDB (Mongoose ODM)
+
+Bildspeicherung: Cloudinary
+
+Authentifizierung: JWT
+
