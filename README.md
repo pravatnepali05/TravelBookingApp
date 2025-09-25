@@ -28,9 +28,7 @@ ravelEase/
 INSTALLATION & EINRICHTUNG
 
 *Repository klonen
--git clone https://github.com/dein-benutzername/travelease.git
--cd travelease
-
+-git clone https://github.com/pravatnepali05/TravelBookingApp/tree/my-new-branch
 
 *Abhängigkeiten installieren
 Für den Server:
